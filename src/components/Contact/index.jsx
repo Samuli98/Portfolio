@@ -11,14 +11,12 @@ const About = () => {
         tabIndex="0"
         aria-hidden="false"
       ></iframe>
-      <h4>Phone</h4>
-      <p>+358 405795752</p>
-
-      <h4>Email</h4>
-      <p>slahtela98@gmail.com</p>
-
-      <h4>Address</h4>
-      <p>Helsinki, Finland, 00960</p>
+      <form name="contact" action="https://formsubmit.co/slahtela98@gmail.com" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="message" placeholder="write here">
+        <button type="submit">Send</button>
+   </form>
     </div>
   );
 };
